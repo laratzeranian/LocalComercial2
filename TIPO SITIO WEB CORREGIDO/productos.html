@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Arturo — Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head><body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-casa-arturo.png" alt="Logo Casa Arturo" class="brand__logo" />
+        
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="active">Productos</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="promociones.html">Promociones</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <h1 class="section__title">Productos</h1>
+      <div class="products">
+        <article class="card"><img src="assets/prod-1.png" alt="Correa de silicona 20/22mm" />
+          <div class="card__body"><h3 class="card__title">Correa de silicona</h3>
+            <p class="card__desc">Apta para relojes de 20 mm y 22 mm. Varios colores.</p><div class="price">$10.000</div></div></article>
+        <article class="card"><img src="assets/prod-2.png" alt="Pilas Philco AAA x4" />
+          <div class="card__body"><h3 class="card__title">Pilas Philco AAA x4</h3>
+            <p class="card__desc">Alcalinas de máxima duración. Pack por 4 unidades.</p><div class="price">$6.000</div></div></article>
+        <article class="card"><img src="assets/prod-3.png" alt="Correa de cuero artesanal" />
+          <div class="card__body"><h3 class="card__title">Correa de cuero artesanal</h3>
+            <p class="card__desc">Cuero nacional. 18, 20, 22 y 24 mm.</p><div class="price">$15.000</div></div></article>
+        <article class="card"><img src="assets/prod-4.png" alt="Despertador Eurotime" />
+          <div class="card__body"><h3 class="card__title">Despertador Eurotime</h3>
+            <p class="card__desc">Luz permanente. 2 años de garantía.</p><div class="price">$20.000</div></div></article>
+        <article class="card"><img src="assets/prod-5.png" alt="Reloj de pared Eurotime" />
+          <div class="card__body"><h3 class="card__title">Reloj de pared Eurotime</h3>
+            <p class="card__desc">30 cm de diámetro. 2 años de garantía.</p><div class="price">$30.000</div></div></article>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Casa Arturo — Libertad 243 - Galería, Local 1, CABA</small>
+      <a href="#" class="to-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+  
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav');
+    if (toggleBtn && navMenu){
+      toggleBtn.addEventListener('click', ()=>{
+        navMenu.classList.toggle('open');
+      });
+    }
+    document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+  </script>
+</body></html>

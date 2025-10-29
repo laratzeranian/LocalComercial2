@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Arturo — Promociones</title>
+  <meta name="description" content="Promociones de correas para reloj, cambio de pila y despertadores en Casa Arturo.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head><body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-casa-arturo.png" alt="Logo Casa Arturo" class="brand__logo" />
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="promociones.html" class="active">Promociones</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section__title">Promociones activas</h1>
+      <p class="muted">Simulá tu compra y mirá cuánto ahorrás en el momento 🕒💸</p>
+
+      
+      
+      
+      
+      <div class="promo-grid">
+        <!-- PROMO 1: correas para reloj -->
+        <section class="promo-card" id="promo2x1">
+          <div class="promo-card-head text-only">
+            <div class="text-block">
+              <h2 class="promo-title">Correas para reloj</h2>
+              <p class="promo-desc">Llevás 2 correas y obtenés <strong>50% OFF en la segunda correa</strong>.</p>
+            </div>
+          </div>
+
+          <div class="promo-form">
+            <label>Cantidad de correas:
+              <input type="number" min="1" value="2" class="promo-cant" data-promo="2x1">
+            </label>
+            <label>Precio por correa ($):
+              <input type="number" min="0" value="12000" class="promo-precio" data-promo="2x1">
+            </label>
+          </div>
+
+          <div class="promo-result" data-res="2x1">
+            <p>Subtotal sin descuento: <span class="sin-desc">$0</span></p>
+            <p>Descuento aplicado: <span class="desc-aplicado">$0</span></p>
+            <p class="promo-total">Total final con ahorro: <strong class="total-final">$0</strong></p>
+          </div>
+        </section>
+
+        <!-- PROMO 2: cambio de pila -->
+        <section class="promo-card" id="promo3x2">
+          <div class="promo-card-head text-only">
+            <div class="text-block">
+              <h2 class="promo-title">Cambio de pila</h2>
+              <p class="promo-desc"><strong>Promo 3x2</strong>: Traés 3 relojes a cambiar pila, pagás 2 servicios.</p>
+            </div>
+          </div>
+
+          <div class="promo-form">
+            <label>Cantidad de relojes:
+              <input type="number" min="1" value="3" class="promo-cant" data-promo="3x2">
+            </label>
+            <label>Precio por cambio de pila ($):
+              <input type="number" min="0" value="3000" class="promo-precio" data-promo="3x2">
+            </label>
+          </div>
+
+          <div class="promo-result" data-res="3x2">
+            <p>Subtotal sin descuento: <span class="sin-desc">$0</span></p>
+            <p>Descuento aplicado: <span class="desc-aplicado">$0</span></p>
+            <p class="promo-total">Total final con ahorro: <strong class="total-final">$0</strong></p>
+          </div>
+        </section>
+
+        <!-- PROMO 3: despertadores / pared -->
+        <section class="promo-card" id="promo10desc">
+          <div class="promo-card-head text-only">
+            <div class="text-block">
+              <h2 class="promo-title">Despertadores y relojes de pared</h2>
+              <p class="promo-desc">Compras grandes: si superás $30.000, tenés <strong>10% OFF</strong> 🛎️.</p>
+            </div>
+          </div>
+
+          <div class="promo-form">
+            <label>Cantidad de unidades:
+              <input type="number" min="1" value="1" class="promo-cant" data-promo="10off">
+            </label>
+            <label>Precio unitario ($):
+              <input type="number" min="0" value="18000" class="promo-precio" data-promo="10off">
+            </label>
+          </div>
+
+          <div class="promo-result" data-res="10off">
+            <p>Subtotal sin descuento: <span class="sin-desc">$0</span></p>
+            <p>Descuento aplicado: <span class="desc-aplicado">$0</span></p>
+            <p class="promo-total">Total final con ahorro: <strong class="total-final">$0</strong></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Casa Arturo — Libertad 243 - Galería, Local 1, CABA</small>
+      <a href="#" class="to-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="promociones.js"></script>
+</body></html>

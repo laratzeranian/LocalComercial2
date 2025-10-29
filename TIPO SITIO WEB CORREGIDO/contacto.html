@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Arturo — Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head><body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-casa-arturo.png" alt="Logo Casa Arturo" class="brand__logo" />
+        
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="promociones.html">Promociones</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container contact">
+      <div class="contact__info">
+        <h1 class="section__title">Contacto</h1>
+        <ul class="contact__list">
+          <li><strong>Dirección:</strong> Libertad 243 - Galería, Local 1, CABA</li>
+          <li><strong>Teléfono:</strong> 4382-2723</li>
+          <li><strong>Email:</strong> casaarturo162@gmail.com</li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/casaarturorelojeria" target="_blank" rel="noopener">@casaarturorelojeria</a></li>
+        </ul>
+      </div>
+      
+<div class="form-card">
+  <h3>Escribinos</h3>
+  <form id="contactForm">
+    <div class="form-row">
+      <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      <input class="input" type="email" id="email" name="email" placeholder="Tu email" required>
+    </div>
+    <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Tu consulta" required></textarea>
+    <button type="submit" class="btn-primary">Enviar consulta</button>
+  </form>
+  
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav');
+    if (toggleBtn && navMenu){
+      toggleBtn.addEventListener('click', ()=>{
+        navMenu.classList.toggle('open');
+      });
+    }
+    document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+  </script>
+</body></html>

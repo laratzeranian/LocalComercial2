@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Arturo — Inicio</title>
+  <meta name="description" content="Cambio de pilas, correas, despertadores y relojes de pared en CABA.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head><body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-casa-arturo.png" alt="Logo Casa Arturo" class="brand__logo" />
+        
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="promociones.html">Promociones</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰ Menú</button>
+    </div>
+  </header>
+  <main class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1>Tu relojería de confianza en Libertad 243 - Galería, Local 1</h1>
+        <p>Venta y service de relojes pulsera, relojes despertadores y relojes de pared.</p>
+        <a href="productos.html" class="btn">Ver productos</a>
+      </div>
+      <div class="hero__image">
+        <img src="assets/fachada.png" alt="Fachada del local">
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Casa Arturo — Libertad 243 - Galería, Local 1, CABA</small>
+      <a href="#" class="to-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+  
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav');
+    if (toggleBtn && navMenu){
+      toggleBtn.addEventListener('click', ()=>{
+        navMenu.classList.toggle('open');
+      });
+    }
+    document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+  </script>
+</body></html>
